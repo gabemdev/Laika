@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter human years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MT7-RE-eHe">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="3xn-LI-YxS"/>
+                                    <constraint firstAttribute="height" constant="32" id="evw-39-PV5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3xn-LI-YxS"/>
+                                        <exclude reference="evw-39-PV5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3xn-LI-YxS"/>
+                                        <include reference="evw-39-PV5"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbi-iQ-0Lg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Vat-AS-D5U"/>
+                                    <constraint firstAttribute="width" constant="368" id="qvD-nT-Bcs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vat-AS-D5U"/>
+                                        <exclude reference="qvD-nT-Bcs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Vat-AS-D5U"/>
+                                        <include reference="qvD-nT-Bcs"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-sb-0qf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Img-Je-fb3"/>
+                                    <constraint firstAttribute="height" constant="177" id="Xjp-54-OG1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Img-Je-fb3"/>
+                                        <exclude reference="Xjp-54-OG1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Img-Je-fb3"/>
+                                        <include reference="Xjp-54-OG1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-oD-NNz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="tJe-Ok-0gq"/>
+                                </constraints>
+                                <state key="normal" title="Convert to Doggy years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tJe-Ok-0gq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="tJe-Ok-0gq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onAgeButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e9V-q7-dIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q4r-oD-NNz" firstAttribute="top" secondItem="MT7-RE-eHe" secondAttribute="bottom" constant="8" id="03l-Me-b3r"/>
+                            <constraint firstAttribute="centerX" secondItem="Qbi-iQ-0Lg" secondAttribute="centerX" id="1lq-I6-0ER"/>
+                            <constraint firstItem="YfU-sb-0qf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="DiP-en-SM8"/>
+                            <constraint firstAttribute="centerX" secondItem="Q4r-oD-NNz" secondAttribute="centerX" id="QnZ-zM-iKr"/>
+                            <constraint firstAttribute="centerX" secondItem="MT7-RE-eHe" secondAttribute="centerX" id="XZ6-te-cZt"/>
+                            <constraint firstItem="MT7-RE-eHe" firstAttribute="top" secondItem="Qbi-iQ-0Lg" secondAttribute="bottom" constant="33" id="Ylb-Df-k0o">
+                                <variation key="widthClass=compact" constant="22"/>
+                            </constraint>
+                            <constraint firstItem="Qbi-iQ-0Lg" firstAttribute="top" secondItem="YfU-sb-0qf" secondAttribute="bottom" constant="56" id="aYg-ao-R0O"/>
+                            <constraint firstAttribute="centerX" secondItem="YfU-sb-0qf" secondAttribute="centerX" id="w8v-J0-cbc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MT7-RE-eHe"/>
+                                <exclude reference="Qbi-iQ-0Lg"/>
+                                <exclude reference="YfU-sb-0qf"/>
+                                <exclude reference="Q4r-oD-NNz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DiP-en-SM8"/>
+                                <exclude reference="w8v-J0-cbc"/>
+                                <exclude reference="1lq-I6-0ER"/>
+                                <exclude reference="aYg-ao-R0O"/>
+                                <exclude reference="XZ6-te-cZt"/>
+                                <exclude reference="Ylb-Df-k0o"/>
+                                <exclude reference="03l-Me-b3r"/>
+                                <exclude reference="QnZ-zM-iKr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MT7-RE-eHe"/>
+                                <include reference="Qbi-iQ-0Lg"/>
+                                <include reference="YfU-sb-0qf"/>
+                                <include reference="Q4r-oD-NNz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DiP-en-SM8"/>
+                                <include reference="w8v-J0-cbc"/>
+                                <include reference="1lq-I6-0ER"/>
+                                <include reference="aYg-ao-R0O"/>
+                                <include reference="XZ6-te-cZt"/>
+                                <include reference="Ylb-Df-k0o"/>
+                                <include reference="03l-Me-b3r"/>
+                                <include reference="QnZ-zM-iKr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ageButton" destination="Q4r-oD-NNz" id="Xxs-HA-vdv"/>
+                        <outlet property="ageLabel" destination="Qbi-iQ-0Lg" id="6j2-wG-ZeT"/>
+                        <outlet property="ageTextField" destination="MT7-RE-eHe" id="ngf-P4-K8k"/>
+                        <outlet property="laikaImage" destination="YfU-sb-0qf" id="jnH-XH-2zg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
